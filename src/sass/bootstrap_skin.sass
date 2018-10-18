@@ -1,0 +1,247 @@
+// variables
+@import "base/_variables.sass"
+
+// styles for the section
+
+//Accordion
+.panel-default>.panel-heading
+	background-color: transparent
+			
+.panel-heading
+	padding: 15px 32px
+	border-radius: 0
+.panel-group .panel
+	border-radius: 0
+.panel-group .panel
+	margin-bottom: -6px
+.panel
+	box-shadow: none
+	border: 0 
+.panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group
+	border: 0
+
+.panel-group .panel-default
+	border-bottom: 1px solid #dadada  	
+	border-top: 1px solid #dadada  	
+
+.panel-title>a
+	text-decoration: none
+	color: black 
+	&:hover
+		text-decoration: none
+		color: #fe8719			 		
+
+.accordion-on,
+.accordion-off
+	position: absolute
+	left: 15px	
+	&:before
+		content: "r"
+		vertical-align: middle
+		font-size: 16px
+		font-family: "Elmetica New", sans-serif
+		color: #fe8719
+		
+.panel-body
+	padding: 0 35px 16px 30px		
+
+#accordion
+	.heading_3
+		a
+			font-family: "Helvetica Neue", sans-serif
+			font-size: 1.25rem
+			line-height: 1.2
+			color: #332914
+			&:focus
+				color: #fe8719   		 
+
+.accordion-off
+	display: block		
+
+.accordion-on
+	display: none
+	transform: rotate(180deg)
+
+.accordion--android
+	.panel-title>a
+		&:hover
+			color: #78b520
+	.accordion-on,
+	.accordion-off	
+		&:before
+			color: #78b520
+	#accordion		
+		.heading_3
+			a
+				&:focus
+					color: #78b520
+
+#accordion
+	li
+		&:before
+			position: relative
+			content: "-"
+			left: -15px					
+			
+// tabs for bootstrap_3
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:hover, 
+.nav-pills>li.active>a:focus
+	background-color: transparent
+
+.nav-pills>li.active>a
+	border: 1px solid #fe8719	
+
+.nav-pills>li>a
+	border-radius: 6px
+
+.nav>li>a:hover, .nav>li>a:focus
+	background-color: transparent
+
+
+//Buttons
+.btn
+	display: inline-block
+	font-family: "GothamProMed", sans-serif
+	font-size: 1rem
+	line-height: 28px
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+	border-radius: 6px
+
+.btn-lg
+	padding: 7px 47px	8px
+
+.btn-primary
+	color: white!important
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.1)
+	border-top: solid #1e9abd 1px
+	border-right: solid #298ec0 1px
+	border-bottom: solid #0c79b0 1px
+	border-left: solid #298ec0 1px
+	background: #41b7d8
+	background: linear-gradient(to bottom,  #41b7d8 0%,#008bd1 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41b7d8', endColorstr='#008bd1',GradientType=0 )
+	&:hover, &:focus
+		background: #4ebcdb
+		border-top: solid #1e9abd 1px
+		border-right: solid #298ec0 1px
+		border-bottom: solid #0c79b0 1px
+		border-left: solid #298ec0 1px
+		background: linear-gradient(to bottom,  #4ebcdb 0%,#1695d5 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebcdb', endColorstr='#1694d5',GradientType=0 )
+	&:active, &.active
+		background: #0389cc
+		border-top: solid #1e9abd 1px
+		border-right: solid #298ec0 1px
+		border-bottom: solid #0c79b0 1px
+		border-left: solid #298ec0 1px
+		background: linear-gradient(to bottom,  #0389cc 0%,#3eb2d3 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0389cc', endColorstr='#3eb2d3',GradientType=0 )
+		box-shadow: inset 0px 1px 1px rgba(0,0,0,0.2)
+
+.btn-danger
+	color: white!important
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.1)
+	padding: 7px 51px 8px
+	background: #e85932
+	border-top: solid #db4218 1px
+	border-right: solid #c22918 1px
+	border-bottom: solid #bb1515 1px
+	border-left: solid #c22918 1px
+	background: linear-gradient(to bottom,  #e85932 0%,#c22326 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e85932', endColorstr='#c22326',GradientType=0 )
+	&:hover, &:focus
+		background: #ea6642
+		border-top: solid #db4218 1px
+		border-right: solid #c22918 1px
+		border-bottom: solid #bb1515 1px
+		border-left: solid #c22918 1px
+		background: linear-gradient(to bottom,  #ea6642 0%,#c83538 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6642', endColorstr='#c83538',GradientType=0 )
+
+	&:active, &.active
+		background: #bf2425
+		border-top: solid #db4218 1px
+		border-right: solid #c22918 1px
+		border-bottom: solid #bb1515 1px
+		border-left: solid #c22918 1px
+		background: linear-gradient(to bottom,  #bf2425 0%,#e25731 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf2425', endColorstr='#e25731',GradientType=0 )
+		box-shadow:inset 0px 1px 2px rgba(0,0,0,0.2)
+		
+// Tabs
+.nav-pills .nav-link
+	border-radius: 6px
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+	background-color: transparent
+	border: 1px solid #fe8719
+	border-radius: 6px
+
+.nav-pills .nav-link.active h3
+	color: #fe8719
+
+.s-tabs--android
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+			border: 1px solid #78b520
+	.nav-pills .nav-link.active h3
+		color: #78b520
+	.nav-pills > li.active > a
+		border: 1px solid #78b520	 		
+	
+// Carousel
+.carousel
+	&-item
+		padding-top: 43px
+		padding-bottom: 60px
+		&__topline
+			&-name
+				display: inline-block
+				vertical-align: middle
+				margin-right: 16px
+				font-family: "Helvetica Neue Medium", sans-serif
+				font-size:  0.9375rem
+				line-height: 28px
+				color: #707070
+	
+.carousel-indicators li
+	width: 11px
+	height: 11px
+	border-radius: 50%
+	border: 1px solid #909090
+	background-color: transparent
+	margin-left: 0
+	margin-right: 7px
+	&:last-child
+		margin-right: 0
+
+.carousel-indicators .active
+	 background-color: #909090
+
+.carousel-control
+	&__prev-icon,
+	&__next-icon
+		background-image: url(../img/icons/no-repeat.png)
+		height: 52px
+		width: 52px
+		cursor: pointer
+	&__prev-icon
+		background-position: 0px -109px
+
+	&__next-icon
+		background-position: 0px -186px
+
+.carousel-control-next
+	justify-content: flex-end	
+
+.carousel-control-prev
+	justify-content: flex-start
+
+ol
+	margin-bottom: 0	
+
+// media
+@media(max-width: 768px)
+	.accordion
+		text-align: left	
+
+		 
